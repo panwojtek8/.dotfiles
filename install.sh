@@ -14,6 +14,9 @@ nix-env -iA \
 	nixpkgs.stow \
 	nixpkgs.git
 
+# source nix
+if [ -e /home/wojtek/.nix-profile/etc/profile.d/nix.sh ]; then . /home/wojtek/.nix-profile/etc/profile.d/nix.sh; fi
+
 # stow
 stow git
 stow zsh
