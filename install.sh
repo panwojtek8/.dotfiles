@@ -18,9 +18,10 @@ nix-env -iA \
 if [ -e /home/wojtek/.nix-profile/etc/profile.d/nix.sh ]; then . /home/wojtek/.nix-profile/etc/profile.d/nix.sh; fi
 
 # stow
-stow ~/.dotfiles/git
-stow ~/.dotfiles/zsh
-stow ~/.dotfiles/nvim
+cd ~/.dotfiles
+stow git
+stow zsh
+stow nvim
 
 # add zsh to valid login shells 
 command -v zsh | sudo tee -a /etc/shells
