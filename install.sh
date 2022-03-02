@@ -31,3 +31,6 @@ antibody bundle  < ~/.zsh_plugins.txt> ~/.zsh_plugins.sh
 # install plug
 sh -c 'curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# run PlugInstall
+nvim --headless +PlugInstall +qall
